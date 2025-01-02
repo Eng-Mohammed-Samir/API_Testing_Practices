@@ -41,3 +41,22 @@ node server.js
 ```
 
 **✨ Now you have your own server, database, and APIs, it’s time to embark on your journey—explore, innovate, and transform your ideas into reality. ✨**
+## Newman commands
+- At first Open your terminal
+- Then git to the file path where collection and environment exist.
+```
+cd "write File_path or drag it and drop here"
+```
+- **Running a collection**
+```
+newman run <Collection-file.json> -e <Environment-file.json>
+EX: newman run E2E_Tests.json -e Test_env.json
+```
+- **Running a collection with multiple number of iterations**
+```
+newman run <Collection-file.json> -e <Environment-file.json> --iteration-count <number-of-iterations>
+```
+- **Running a collection with a delay between requests**
+```
+newman run <Collection-file.json> -e <Environment-file.json> --delay-request <delay-in-milliseconds>
+```
