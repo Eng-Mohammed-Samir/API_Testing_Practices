@@ -10,7 +10,7 @@ Executed API collections manually using [Postman](https://www.postman.com/downlo
 Automated API collection execution using [Newman](https://www.npmjs.com/package/newman) for efficiency and consistency.
 #### Reporting:
 Generated HTML report using [Newman-reporter-htmlextra](https://www.npmjs.com/package/newman-reporter-htmlextra) summarizing the results of the automated collection runs for better analysis and documentation.
-## preconditions
+## Preconditions
 - Having [node.js](https://nodejs.org/en/download).
 
 ## To run the mock server
@@ -42,8 +42,8 @@ node server.js
 
 **✨ Now you have your own server, database, and APIs, it’s time to embark on your journey—explore, innovate, and transform your ideas into reality. ✨**
 ## Newman commands
-- At first Open your terminal
-- Then git to the file path where collection and environment exist.
+- **At first Open your terminal**.
+- **Then git to the file path where collection and environment exist**.
 ```
 cd "write File_path or drag it and drop here"
 ```
@@ -52,11 +52,15 @@ cd "write File_path or drag it and drop here"
 newman run <Collection-file.json> -e <Environment-file.json>
 EX: newman run E2E_Tests.json -e Test_env.json
 ```
-- **Running a collection with multiple number of iterations**
+- **Running a collection with multiple iterations**
 ```
 newman run <Collection-file.json> -e <Environment-file.json> --iteration-count <number-of-iterations>
 ```
 - **Running a collection with a delay between requests**
 ```
 newman run <Collection-file.json> -e <Environment-file.json> --delay-request <delay-in-milliseconds>
+```
+- **Running a collection with an html report summarizing results**
+```
+newman run <Collection-file.json> -e <Environment-file.json> -r htmlexta
 ```
