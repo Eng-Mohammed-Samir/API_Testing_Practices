@@ -64,3 +64,4 @@ newman run <Collection-file.json> -e <Environment-file.json> --delay-request <de
 ```
 newman run <Collection-file.json> -e <Environment-file.json> -r htmlexta
 ```
+**✨ For further clarification, please watch my [explanation video](https://www.linkedin.com/posts/mohammed-samir-2a6544243_new-milestone-achieved-im-thrilled-activity-7280663734950219776-jlo2?utm_source=share&utm_medium=member_desktop) on linkedin. ✨**
